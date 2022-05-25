@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
+import calculate from '../logic/calculate';
 
 const keys = [
   {
@@ -78,20 +79,49 @@ const keys = [
     class: 'btn orange',
   },
 ];
-class Calculator extends React.Component {
+
+class Calculator extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
   }
 
+  clickHandler = (e) => {
+    this.setState((prev) => calculate(prev, e.target.innerText));
+  };
+
   render() {
+    const { total, next, operation } = this.state;
+    let result;
+    if (next === null && operation === null && total === null) {
+      result = 0;
+    }
+
+    if (next !== null && operation === null && total === null) {
+      result = next;
+    }
+
+    if (next === null && operation !== null && total !== null) {
+      result = total + operation;
+    }
+
+    if (next !== null && operation !== null && total !== null) {
+      result = total + operation + next;
+    }
+
+    if (next === null && operation === null && total !== null) {
+      result = total;
+    }
+
     return (
       <div className="container">
-        <from>
-          <input type="text" placeholder="0" />
-        </from>
+        <div className="result">{result}</div>
         <div className="keypad">
-          {keys.map((btn) => (<button type="button" key={btn.name} className={btn.class}>{btn.name}</button>))}
+          {keys.map((btn) => (<button type="button" value={btn.name} key={btn.name} onClick={this.clickHandler} className={btn.class}>{btn.name}</button>))}
         </div>
       </div>
     );

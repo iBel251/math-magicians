@@ -3,35 +3,32 @@ body {
   padding: 0;
 }
 
-input {
-  width: 235px;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: gray;
-  height: 50px;
-  text-align: right;
-  color: white;
-  padding-right: 5px;
-}
-
 ::placeholder {
   color: white;
 }
 
 .container {
-  max-width: 240px;
+  max-width: 320px;
   margin: 5vh auto;
 }
 
-.btn {
-  width: 60px;
+.result {
+  background-color: gray;
+  max-width: 315px;
   height: 40px;
+  text-align: right;
+  padding: 20px 5px 0 0;
+  color: white;
+}
+
+.btn {
+  width: 25%;
+  height: 60px;
   border: 1px solid #c6c6c6;
 }
 
 .zero {
-  width: 120px;
+  width: 50%;
 }
 
 .gray {
