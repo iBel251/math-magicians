@@ -78,16 +78,24 @@ const keys = [
     class: 'btn orange',
   },
 ];
+class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
-const Calculator = () => (
-  <div className="container">
-    <from>
-      <input type="text" placeholder="0" />
-    </from>
-    <div className="keypad">
-      {keys.map((btn) => (<button type="button" key={btn.name} className={btn.class}>{btn.name}</button>))}
-    </div>
-  </div>
-);
+  render() {
+    return (
+      <div className="container">
+        <from>
+          <input type="text" placeholder="0" />
+        </from>
+        <div className="keypad">
+          {keys.map((btn) => (<button type="button" key={btn.name} className={btn.class}>{btn.name}</button>))}
+        </div>
+      </div>
+    );
+  }
+}
 
 export default Calculator;
