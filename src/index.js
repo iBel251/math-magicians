@@ -6,7 +6,7 @@ import {
   Route,
 } from 'react-router-dom';
 import App from './App';
-import Calculator from './components/Calculator';
+// import Calculator from './components/Calculator';
 import Home from './components/Home';
 import Quote from './components/Quote';
 import Navigation from './components/Navigation';
@@ -16,10 +16,10 @@ root.render(
   <BrowserRouter>
     <Navigation />
     <Routes>
-      <Route path="/" element={<App />} />
+      <Route path="/" element={<Home />} />
       <Route path="Home" element={<Home />} />
       <Route path="Quotes" element={<Quote />} />
-      <Route path="Calculator" element={<Calculator />} />
+      <Route path="Calculator" element={<App />} />
     </Routes>
   </BrowserRouter>,
 );
