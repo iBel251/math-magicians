@@ -108,10 +108,13 @@ const Calculator = () => {
     result = total;
   }
   return (
-    <div className="container">
-      <div className="result">{result}</div>
-      <div className="keypad">
-        {keys.map((btn) => (<button type="button" value={btn.name} key={btn.name} onClick={clickHandler} className={btn.class}>{btn.name}</button>))}
+    <div className="window">
+      <h2>Let&apos;s do some math!</h2>
+      <div className="container">
+        <div className="result">{result}</div>
+        <div className="keypad">
+          {keys.map((btn) => (<button type="button" value={btn.name} key={btn.name} onClick={clickHandler} className={btn.class}>{btn.name}</button>))}
+        </div>
       </div>
     </div>
   );

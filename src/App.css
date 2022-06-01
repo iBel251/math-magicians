@@ -1,20 +1,78 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 ::placeholder {
   color: white;
 }
 
+p {
+  width: 80%;
+  margin: 15px auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+nav * {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  margin: auto 3px;
+  border-radius: 10px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px gray;
+}
+
+.quote {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 70vh;
+}
+
+.window {
+  display: flex;
+}
+
+.window h2 {
+  width: fit-content;
+  margin: 25px auto;
+}
+
 .container {
-  max-width: 320px;
-  margin: 5vh auto;
+  width: 420px;
+  margin: 5vh auto 5vh 0;
 }
 
 .result {
   background-color: gray;
-  max-width: 315px;
+  max-width: 420px;
   height: 40px;
   text-align: right;
   padding: 20px 5px 0 0;
