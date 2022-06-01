@@ -12,7 +12,7 @@
 - [x] VS Code
 
 ## Website Mockup 📱 💻 🖥️
-not yet
+![image](https://user-images.githubusercontent.com/93576145/171414281-968ad07b-d25d-404c-925e-04cde3805c05.png)
 
 
 ## Live Demo 🔗
