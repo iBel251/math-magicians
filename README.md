@@ -18,7 +18,8 @@
 
 
 ## Live Demo 🔗
-[Heroku](https://imran-mathapp.herokuapp.com/)
+- [Heroku](https://imran-mathapp.herokuapp.com/)
+- [Netlify](https://math-magicianscom.netlify.app/)
 
 ## Getting Started
 
