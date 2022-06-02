@@ -12,12 +12,13 @@
 - [x] VS Code
 
 ## Website Mockup 📱 💻 🖥️
-![image](https://user-images.githubusercontent.com/93576145/171414281-968ad07b-d25d-404c-925e-04cde3805c05.png)
+![image](https://user-images.githubusercontent.com/93576145/171662533-5dd41478-44dd-494b-8919-00f560d9c141.png)
+![image](https://user-images.githubusercontent.com/93576145/171662608-078e4514-4871-4259-ab02-6d691dba4d18.png)
+
 
 
 ## Live Demo 🔗
-
-not yet
+[Heroku](https://imran-mathapp.herokuapp.com/)
 
 ## Getting Started
 
