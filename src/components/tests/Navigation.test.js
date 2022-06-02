@@ -4,10 +4,10 @@ import renderer from 'react-test-renderer';
 import Navigation from '../Navigation';
 
 const Mocked = () => (
-    <BrowserRouter>
-        <Navigation />
-    </BrowserRouter>
-)
+  <BrowserRouter>
+    <Navigation />
+  </BrowserRouter>
+);
 
 test('renders correctly', () => {
   const tree = renderer.create(<Mocked />).toJSON();
