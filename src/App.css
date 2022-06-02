@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: azure;
 }
 
 ::placeholder {
@@ -46,14 +47,24 @@ nav * {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 2px 2px 2px gray;
+  background-color: #ffa500;
 }
 
 .quote {
-  max-width: 800px;
-  margin: auto;
+  max-width: 600px;
+  margin: 50px auto;
   display: flex;
-  align-items: center;
-  height: 70vh;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  box-shadow: 2px 2px 2px 2px #ead2a4;
+}
+
+.quote span {
+  text-align: right;
+  margin-right: 35px;
+  color: #ffa500;
+  font-weight: 900;
 }
 
 .window {
@@ -73,7 +84,7 @@ nav * {
 .result {
   background-color: gray;
   max-width: 420px;
-  height: 40px;
+  height: 70px;
   text-align: right;
   padding: 20px 5px 0 0;
   color: white;
